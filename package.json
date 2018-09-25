@@ -1,0 +1,25 @@
+{
+  "name": "appname",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "dagre": "~0.7.4",
+    "bootstrap": "^3.3.7",
+    "cytoscape": "^3.2.4",
+    "d3": "^4.11.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "npm": "^6.0.0",
+    "vis": "^4.20.1",
+    "cytoscape-dagre": "^2.2.1",
+    "dagre-layout": "^0.8.8"
+  },
+  "devDependencies": {
+    "electron": "^1.8.6",
+    "electron-prebuilt-compile": "^1.7.8"
+  }
+}

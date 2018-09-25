@@ -1,0 +1,20 @@
+#display-mt {
+  margin: 5px;
+  width: 100%;
+  height: 100%;
+
+  display: none;
+}
+
+#display-container {
+  margin: 5px;
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+
+#enumerate-toolbar {
+
+  display: none;
+}
