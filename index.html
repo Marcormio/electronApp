@@ -1,90 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>MegaTree App</title>
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/photon.min.css">
-    <link rel="stylesheet" href="css/graph.css">
-    <link rel="stylesheet" href="css/mta-style.css">
-    <link rel="stylesheet" href="node_modules/vis/dist/vis.css" type="text/css" />
-  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" type="text/css" />
-
-    <!-- Javascript -->
-
-    <!-- <script type="text/javascript" src="node_modules/vis/dist/vis.js"></script> -->
-    <script type="text/javascript" src="node_modules/cytoscape/dist/cytoscape.js"></script>
-    <script src="node_modules/cytoscape-dagre/cytoscape-dagre.js"></script>
-    <script src="node_modules/dagre/dist/dagre.js"></script>
-    <script src="node_modules/dagre/dist/dagre.core.js"></script>
-    <script src="node_modules/dagre-layout/dist/dagre-layout.core.js"></script>
-    <script src="node_modules/dagre-layout/dist/dagre-layout.js"></script>
-
-  </head>
-  <body>
-
-    <div class="window">
-        <header class="toolbar toolbar-header">
-            <div class="toolbar-actions">
-
-                <div class="btn-group">
-                    <button class="btn btn-default" id="btn-plus">
-                      <span class="icon icon-plus"></span>
-                    </button>
-                    <button class="btn btn-default">
-                      <span class="icon icon-shuffle"></span>
-                    </button>
-                </div>
-
-                <button class="btn btn-default pull-right" id="btn-build">
-                    <span class="icon icon-cog icon-text"></span>
-                    Build
-                </button>
-
-                <button class="btn btn-default pull-right" id="btn-enumerate">
-                    <span class="fa fa-align-center" aria-hidden="true"></span>
-                    Enumerate
-                </button>
-
-            </div>
-      </header>
-
-
-    <!--enumerate toolbar-->
-
-    <header class="toolbar toolbar-header" id="enumerate-toolbar">
-        <div class="toolbar-actions">
-            <div class="btn-group">
-                <button class="btn btn-default" id="btn-enum-prev">
-                    <span class="fa fa-arrow-left" aria-hidden="true"></span>
-                    Previous
-                </button>
-                <button class="btn btn-default" id="btn-enum-next">
-                    Next
-                    <span class="fa fa-arrow-right" aria-hidden="true"></span>
-                </button>
-            </div>
-
-
-            <button class="btn btn-default pull-right" id="btn-enum-close">
-                <span class="fa fa-times" aria-hidden="true"></span>
-            </button>
-        </div>
-    </header>
-
-
-
-      <!-- Your app's content goes inside .window-content -->
-      <div class="window-content">
-
-              <div id="display-container">
-
-              </div>
-
-        </div>
-      </div>
-
-  </body>
-
-  <script src="js/display.js"></script>
+	<head>
+		<title>MegaTree App</title>
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/photon.min.css">
+		<link rel="stylesheet" href="css/graph.css">
+		<link rel="stylesheet" href="css/mta-style.css">
+		<link rel="stylesheet" href="node_modules/vis/dist/vis.css" type="text/css" />
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" type="text/css" />
+		<!-- Javascript -->
+		<!-- <script type="text/javascript" src="node_modules/vis/dist/vis.js"></script> -->
+		<script type="text/javascript" src="node_modules/cytoscape/dist/cytoscape.js"></script>
+		<script src="node_modules/cytoscape-dagre/cytoscape-dagre.js"></script>
+		<script src="node_modules/dagre/dist/dagre.js"></script>
+		<script src="node_modules/dagre/dist/dagre.core.js"></script>
+		<script src="node_modules/dagre-layout/dist/dagre-layout.core.js"></script>
+		<script src="node_modules/dagre-layout/dist/dagre-layout.js"></script>
+	</head>
+	<body>
+		<div class="window">
+			<header class="toolbar toolbar-header">
+				<div class="toolbar-actions">
+					<div class="btn-group">
+						<button class="btn btn-default" id="btn-plus">
+						<span class="icon icon-plus"></span>
+						</button>
+						<button class="btn btn-default">
+						<span class="icon icon-shuffle"></span>
+						</button>
+					</div>
+					<button class="btn btn-default pull-right" id="btn-build">
+					<span class="icon icon-cog icon-text"></span>
+					Build
+					</button>
+					<button class="btn btn-default pull-right" id="btn-enumerate">
+					<span class="fa fa-align-center" aria-hidden="true"></span>
+					Enumerate
+					</button>
+				</div>
+			</header>
+			<!--enumerate toolbar-->
+			<header class="toolbar toolbar-header" id="enumerate-toolbar">
+				<div class="toolbar-actions">
+					<div class="btn-group">
+						<button class="btn btn-default" id="btn-enum-prev">
+						<span class="fa fa-arrow-left" aria-hidden="true"></span>
+						Previous
+						</button>
+						<button class="btn btn-default" id="btn-enum-next">
+						Next
+						<span class="fa fa-arrow-right" aria-hidden="true"></span>
+						</button>
+					</div>
+					<button class="btn btn-default pull-right" id="btn-enum-close">
+					<span class="fa fa-times" aria-hidden="true"></span>
+					</button>
+				</div>
+			</header>
+			<!-- Your app's content goes inside .window-content -->
+			<div class="window-content">
+				<div id="display-container">
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/display.js"></script>
 </html>
